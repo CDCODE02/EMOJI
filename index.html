@@ -39,6 +39,7 @@
         <!-- include styles -->
         <script src="../assets/js/app-head.js"></script>
         <link rel="stylesheet" href="../assets/css/theme/main.min.css">
+        <link rel="stylesheet" href="../assets/css/terminal.min.css">
 
         <!-- Include UIkit Font Files -->
 <link rel="stylesheet" href="path/to/uikit/fonts/fontawesome/css/all.min.css" />
@@ -177,10 +178,10 @@
                                         
                                         <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Sui Emoji</h2>
                                         <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted"> Represents a groundbreaking fusion of digital art and utility on the Sui Blockchain, redefining how we perceive and interact with emojis.</p>
-                                        <a href="https://hop.ag/swap/SUI-EMOJI" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
+                                        <button onClick="openTerminal()" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
                                             <span>BUY $Emoji</span>
                                             <i class="uk-text-bold"></i>
-                                        </a>
+                                        </button>
 										<a href="https://suiscan.xyz/mainnet/coin/0x07ab9ba99abd9af0d687ae55079601192be5a12d1a21c8c4cd9f1a17519111e0::emoji::EMOJI/txs" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
                                             <span>Contract</span>
                                             <i class="uk-text-bold"></i>
@@ -724,8 +725,13 @@
         </footer>
 
         <!-- Footer end -->
+<div class="terminal-modal" onclick="closeTerminal()">
+    <button class="close-terminal" onclick="closeTerminal()">X</button>
+        <iframe src="https://suicoins.com/terminal/swap?to=0x7ab9ba99abd9af0d687ae55079601192be5a12d1a21c8c4cd9f1a17519111e0::emoji::EMOJI&from=0x2::sui::SUI&fixed=out" class="terminal"></iframe>
+    </div>
 
         <!-- include scripts -->
+        <script defer src="../assets/js/terminal.js"></script>
         <script defer src="../assets/js/jquery.min.js"></script>
         <script defer src="../assets/js/swiper-bundle.min.js"></script>
         <script defer src="../assets/js/feather.min.js"></script>
