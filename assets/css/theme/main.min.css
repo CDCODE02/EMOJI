@@ -3802,7 +3802,7 @@ html:not(.bp-l).uk-dark .uni-header-navbar.uk-active {
 .uk-dark.uk-droplist {
   box-shadow: 0 0 0 1px var(--color-gray-100);
 }
-html {
+html .emoji-content {
   font-family: var(
     --body-font-typeface,
     system-ui,
@@ -3818,7 +3818,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "zero" on;
 }
-body {
+body .emoji-content {
   font-family: var(
     --body-font-typeface,
     system-ui,
