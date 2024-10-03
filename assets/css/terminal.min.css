@@ -1,1 +1,39 @@
-.terminal address,dl,fieldset,figure,ol,p,pre,ul{margin:0;color:#000}.terminal{width:25rem;max-height:calc(100vh - 5rem);overflow-y:auto;overflow-x:hidden;}.terminal-modal{inset:0;z-index:1000;display:none;position:fixed;background:#0005;align-items:center;justify-content:center;flex-direction:column;gap:1rem}.close-terminal{border-radius:50%;width:2rem;height:2rem;background:#4da2ff;border:none;margin-left:22.4rem;color:white;}
+.terminal address,
+dl,
+fieldset,
+figure,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+}
+.terminal {
+  width: 25rem;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.terminal-modal {
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  background: #0005;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.close-terminal {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: #4da2ff;
+  border: none;
+  margin-left: 22.4rem;
+  color: white;
+}
+.terminal button span {
+  margin-top: -1rem;
+}
